@@ -17,7 +17,7 @@ function makePlane() {
 function makeBox() {
     const box = document.querySelector('a-box')
     box.setAttribute('src', 'https://vignette.wikia.nocookie.net/dwarves-vs-zombies/images/9/94/Woodenplank.png/revision/latest?cb=20141217232336')
-    box.setAttribute('position', '0 .5 0')
+    box.setAttribute('position', '0 1 0')
     box.setAttribute('rotation', '0 0 0')
     box.setAttribute('height', '1')
     box.setAttribute('width', '1')
@@ -33,9 +33,16 @@ function sky() {
 
 }
 
+function sphere() {
+    const sphere = document.querySelector('a-sphere')
+    sphere.setAttribute('src', 'https://media.istockphoto.com/vectors/seamless-soccer-ball-vector-illustration-vector-id165593907')
+    sphere.setAttribute('position', '5 1 2')
+}
+
 
 requestAnimationFrame(makePlane)
 requestAnimationFrame(makeBox)
+requestAnimationFrame(sphere)
 requestAnimationFrame(sky)
 
 
